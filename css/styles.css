@@ -1,27 +1,9 @@
+/* Global */
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-header,
-main {
-    margin-left: 180px;
-}
-
-nav {
-    height: 100%;
-    width: 180px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-right: 3px solid teal;
-    font-weight: 600;
-    text-align: center;
-}
-
+/* Resets */
 ul {
     list-style: none;
     margin-left: 0;
@@ -31,6 +13,27 @@ ul {
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header,
+main {
+    margin-left: 180px;
+}
+
+.main-nav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 3px solid teal;
+    font-weight: 600;
+    text-align: center;
 }
 
 .hero-image {
