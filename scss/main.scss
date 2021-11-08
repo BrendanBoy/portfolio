@@ -122,18 +122,19 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 60px 40px;
+    padding: 60px 0;
+    margin: 0 40px
 }
 
 .project {
     display: flex;
     flex-direction: column;
-    width: 330px;
+    width: 100%;
     height: auto;
-    margin: 20px 5px;
+    margin: 20px 0;
     h3 {
         font-size: 24px;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     img {
         max-width: 100%;
@@ -178,6 +179,9 @@ body {
     .hero p {
         font-size: 24px;
     }
+    .project {
+        width: 47.5%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -190,5 +194,11 @@ body {
     header,
     main {
         margin-left: 180px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project {
+        width: 30%;
     }
 }
