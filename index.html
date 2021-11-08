@@ -77,7 +77,20 @@
             </div>
         </section>
         <section id="contact">
-            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-blurb">
+                    <h2>Get in Touch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, rem eius. Totam.</p>
+                </div>
+                <form class="contact-form" action="index.html" method="POST">
+                    <input class="form-field" type="text" name="first_name" id="first_name" placeholder="First Name*" required>
+                    <input class="form-field" type="text" name="last_name" id="last_name" placeholder="Last Name*" required><br>
+                    <input class="form-field" type="email" name="mail" id="user_email" placeholder="Email Address*" required><br>
+                    <input class="form-field" type="text" name="subject" id="subject" placeholder="Subject"><br>
+                    <textarea class="form-field" name="message" id="user_message" rows="10" placeholder="Message"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </main>
 </body>

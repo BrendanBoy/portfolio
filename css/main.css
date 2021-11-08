@@ -56,6 +56,10 @@ body {
   border-top: 3px solid teal;
   border-bottom: 3px solid teal;
 }
+.main-nav li:last-child:hover {
+  background-color: teal;
+  color: #fff;
+}
 .main-nav li:not(:last-child) a:hover {
   border-bottom: 3px solid teal;
 }
@@ -124,6 +128,7 @@ body {
 .project img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 .project-img {
   order: -1;
@@ -132,6 +137,26 @@ body {
   font-weight: 600;
   font-size: 12px;
   margin-bottom: 10px;
+}
+
+.contact-container {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
+}
+
+.contact-blurb {
+  max-width: 33%;
+}
+
+.contact-form {
+  max-width: 66%;
+  align-self: flex-end;
+}
+
+.form-field {
+  background-color: #dbdddc;
 }
 
 /* Media Queries */

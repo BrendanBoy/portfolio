@@ -2,6 +2,7 @@
 $theme: teal;
 $overlay: #fff;
 $body-text: #252525;
+$form-background: #dbdddc;
 
 /* Global */
 * {
@@ -58,6 +59,10 @@ body {
         &:last-child {
             border-top: 3px solid $theme;
             border-bottom: 3px solid $theme;
+            &:hover {
+                background-color: $theme;
+                color: $overlay;
+            }
         }
         &:not(:last-child) a:hover {
             border-bottom: 3px solid $theme;
@@ -133,6 +138,7 @@ body {
     img {
         max-width: 100%;
         height: auto;
+        border-radius: 8px;
     }
     &-img {
         order: -1;
@@ -142,6 +148,26 @@ body {
         font-size: 12px;
         margin-bottom: 10px;
     }
+}
+
+.contact-container {
+    display: flex;
+    padding-left: 40px;
+    padding-right:40px;
+    justify-content: space-between;
+}
+
+.contact-blurb {
+    max-width: 33%;
+}
+
+.contact-form {
+    max-width: 66%;
+    align-self: flex-end;
+}
+
+.form-field {
+    background-color: $form-background;
 }
 
 /* Media Queries */
