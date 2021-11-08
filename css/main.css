@@ -18,6 +18,7 @@ a, a:hover, a:focus, a:active {
 /* Base Styles */
 body {
   font-family: "Poppins", sans-serif;
+  color: #252525;
 }
 
 .mobile-nav {
@@ -104,7 +105,33 @@ body {
 
 #projects {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding: 60px 40px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: auto;
+  margin: 20px 5px;
+}
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+.project-img {
+  order: -1;
+}
+.project span {
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 /* Media Queries */
