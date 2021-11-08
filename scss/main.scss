@@ -1,5 +1,5 @@
 // Variables
-$theme: teal;
+$theme: #008080;
 $overlay: #fff;
 
 /* Global */
@@ -91,7 +91,7 @@ body {
     }
     &-image {
         background: {
-            image: url('../img/pexels-daria-shevtsova-1884303.jpg');
+            image: linear-gradient(0deg, transparent, 25%, rgba(0, 128, 128, 0.6)), url('../img/pexels-daria-shevtsova-1884303.jpg');
             position: center;
             repeat: no-repeat;
             size: cover;
