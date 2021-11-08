@@ -22,11 +22,11 @@ body {
 
 .mobile-nav {
   position: absolute;
-  color: white;
+  color: #fff;
   font-size: 62px;
   height: auto;
   z-index: 5;
-  border: 5px solid white;
+  border: 5px solid #fff;
   margin: 5px;
   padding: 5px 15px;
   border-radius: 5px;
@@ -44,6 +44,20 @@ body {
   text-align: center;
   overflow-y: auto;
 }
+.main-nav ul {
+  padding-top: 40px;
+}
+.main-nav li {
+  padding: 10px 0;
+  margin: 20px 0;
+}
+.main-nav li:last-child {
+  border-top: 3px solid teal;
+  border-bottom: 3px solid teal;
+}
+.main-nav li:not(:last-child) a:hover {
+  border-bottom: 3px solid teal;
+}
 
 .initials {
   font-size: 72px;
@@ -53,44 +67,31 @@ body {
   padding: 20px 0;
 }
 
-.main-nav ul {
-  padding-top: 40px;
-}
-
-.main-nav li {
-  padding: 10px 0;
-  margin: 20px 0;
-}
-
-.main-nav li:not(:last-child) a:hover {
-  border-bottom: 3px solid teal;
-}
-
-.main-nav li:last-child {
-  border-top: 3px solid teal;
-  border-bottom: 3px solid teal;
-}
-
 .socials {
   margin-bottom: 20px;
 }
-
 .socials i {
   color: teal;
   padding: 5px;
 }
 
+.hero h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.hero p {
+  font-size: 18px;
+}
 .hero-image {
   background-image: url("../img/pexels-daria-shevtsova-1884303.jpg");
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   /* Does this still need to be here? */
 }
-
 .hero-text {
   text-align: center;
   position: absolute;
@@ -99,15 +100,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-}
-
-.hero h1 {
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.hero p {
-  font-size: 18px;
 }
 
 /* Media Queries */
