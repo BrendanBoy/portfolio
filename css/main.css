@@ -39,7 +39,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  border-right: 3px solid #008080;
+  border-right: 3px solid teal;
   font-weight: 600;
   text-align: center;
   overflow-y: auto;
@@ -52,18 +52,18 @@ body {
   margin: 20px 0;
 }
 .main-nav li:last-child {
-  border-top: 3px solid #008080;
-  border-bottom: 3px solid #008080;
+  border-top: 3px solid teal;
+  border-bottom: 3px solid teal;
 }
 .main-nav li:not(:last-child) a:hover {
-  border-bottom: 3px solid #008080;
+  border-bottom: 3px solid teal;
 }
 
 .initials {
   font-size: 72px;
-  color: #008080;
+  color: teal;
   letter-spacing: 7px;
-  border-bottom: 3px solid #008080;
+  border-bottom: 3px solid teal;
   padding: 20px 0;
 }
 
@@ -71,7 +71,7 @@ body {
   margin-bottom: 20px;
 }
 .socials i {
-  color: #008080;
+  color: teal;
   padding: 5px;
 }
 
