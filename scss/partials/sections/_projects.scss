@@ -1,0 +1,32 @@
+#projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    margin: 0 40px
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    h3 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    &-img {
+        order: -1;
+    }
+    span {
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}

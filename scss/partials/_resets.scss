@@ -1,0 +1,16 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+/* Resets */
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

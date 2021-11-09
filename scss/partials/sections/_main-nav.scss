@@ -1,0 +1,46 @@
+.main-nav {
+    display: none;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 3px solid $theme;
+    font-weight: 600;
+    text-align: center;
+    overflow-y: auto;
+    ul {
+        padding-top: 40px;
+    }
+    li {
+        padding: 10px 0;
+        margin: 20px 0;
+        &:last-child {
+            border-top: 3px solid $theme;
+            border-bottom: 3px solid $theme;
+            &:hover {
+                background-color: $theme;
+                color: $overlay;
+            }
+        }
+        &:not(:last-child) a:hover {
+            border-bottom: 3px solid $theme;
+        }
+    }
+}
+
+.initials {
+    font-size: 72px;
+    color: $theme;
+    letter-spacing: 7px;
+    border-bottom: 3px solid $theme;
+    padding: 20px 0;
+}
+
+.socials {
+    margin-bottom: 20px;
+    i {
+        color: $theme;
+        padding: 5px;
+    }
+}

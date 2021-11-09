@@ -1,0 +1,31 @@
+.hero {
+    h1 {
+        font: {
+            weight: 600;
+            size: 24px;
+        }
+    }
+    p {
+        font-size: 18px;
+    }
+    &-image {
+        background: {
+            image: linear-gradient(0deg, transparent, 25%, rgba($theme, 0.6)), url('../img/pexels-daria-shevtsova-1884303.jpg');
+            position: center;
+            repeat: no-repeat;
+            size: cover;
+        }
+        height: 100vh;
+        position: relative;
+        overflow: hidden; /* Does this still need to be here? */
+    }
+    &-text {
+        text-align: center;
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $overlay;
+    }
+}

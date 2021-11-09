@@ -1,0 +1,11 @@
+.mobile-nav {
+    position: absolute;
+    color: $overlay;
+    font-size: 62px;
+    height: auto;
+    z-index: 5;
+    border: 5px solid $overlay;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
