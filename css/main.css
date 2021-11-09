@@ -111,8 +111,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 60px 0;
-  margin: 0 40px;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .project {
@@ -140,12 +140,12 @@ body {
   margin-bottom: 10px;
 }
 
-.contact-container {
+#contact {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
-  margin-right: 40px;
   justify-content: space-between;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .contact-blurb {
@@ -157,8 +157,26 @@ body {
 }
 
 .form-field {
-  background-color: #dbdddc;
+  background-color: #dadbdd;
   width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  color: #252525;
+  font-weight: 600;
+  padding: 12px 60px;
+  margin: 8px 0;
+  border: 3px solid #252525;
+  border-radius: 6px;
 }
 
 /* Media Queries */
@@ -169,6 +187,10 @@ body {
 
   .hero p {
     font-size: 24px;
+  }
+
+  #projects {
+    margin-top: 20px;
   }
 
   .project {
@@ -189,7 +211,39 @@ main {
     margin-left: 180px;
   }
 }
+@media screen and (min-width: 992px) {
+  #projects, #contact {
+    margin-top: 40px;
+  }
+
+  .contact-blurb {
+    width: 25%;
+  }
+
+  .contact-form {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .name {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .name .form-field {
+    width: 49%;
+  }
+
+  #last_name {
+    margin-left: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
+  #projects {
+    margin-top: 50px;
+  }
+
   .project {
     width: 32%;
   }

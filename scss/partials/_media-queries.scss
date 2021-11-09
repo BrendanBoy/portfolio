@@ -6,6 +6,9 @@
     .hero p {
         font-size: 24px;
     }
+    #projects {
+        margin-top: 20px;
+    }
     .project {
         width: 47.5%;
     }
@@ -24,7 +27,35 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    #projects, #contact {
+        margin-top: 40px;
+    }
+    .contact-blurb {
+        width: 25%;
+    }
+    .contact-form {
+        width: 70%;
+        margin-top: 20px;
+    }
+    .name {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .form-field {
+            width: 49%;
+        }
+    }
+    #last_name {
+        margin-left: auto;
+    }
+}
+
 @media screen and (min-width: 1200px) {
+    #projects {
+        margin-top: 50px;
+    }
     .project {
         width: 32%;
     }
