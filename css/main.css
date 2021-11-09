@@ -21,6 +21,10 @@ body {
   color: #252525;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 .mobile-nav {
   position: absolute;
   color: #fff;
@@ -150,6 +154,11 @@ body {
 
 .contact-blurb {
   width: 100%;
+}
+
+.bold {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .contact-form {
