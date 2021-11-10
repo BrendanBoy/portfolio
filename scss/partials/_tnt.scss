@@ -1,0 +1,15 @@
+.initials:hover {
+    color: $background;
+    background-color: $theme;
+}
+
+.socials i:hover {
+    color: $background;
+    background-color: $theme;
+    border-radius: 50%;
+}
+
+input[type="submit"]:hover {
+    color: $background;
+    background-color: $body-text;
+}
