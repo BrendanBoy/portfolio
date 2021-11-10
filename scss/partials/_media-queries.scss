@@ -1,9 +1,9 @@
 /* Media Queries */
 @media screen and (min-width: 576px) {
-    .hero h1 {
+    #hero h1 {
         font-size: 48px;
     }
-    .hero p {
+    .hero-text p {
         font-size: 24px;
     }
     #projects {
@@ -11,6 +11,9 @@
     }
     .project {
         width: 47.5%;
+    }
+    .scroll-btn p {
+        font-size: 20px;
     }
 }
 
@@ -22,7 +25,8 @@
         display: block;
     }
     header,
-    main {
+    main,
+    footer {
         margin-left: 180px;
     }
 }

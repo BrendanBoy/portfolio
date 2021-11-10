@@ -33,10 +33,11 @@ textarea {
 }
 
 input[type=submit] {
+    font-size: 18px;
     background-color: transparent;
     color: $body-text;
     font-weight: 600;
-    padding: 12px 60px;
+    padding: 15px 60px;
     margin: 8px 0;
     border: 3px solid $body-text;
     border-radius: 6px;
