@@ -106,7 +106,7 @@ h2 {
 }
 
 .hero-image {
-  background-image: linear-gradient(0deg, transparent, 25%, rgba(0, 128, 128, 0.6)), url("../img/pexels-daria-shevtsova-1884303.jpg");
+  background-image: linear-gradient(180deg, transparent, 25%, rgba(0, 128, 128, 0.6)), url("../img/pexels-daria-shevtsova-1884303.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
