@@ -10,3 +10,53 @@
 'partials/sections/footer',
 'partials/tnt',
 'partials/media-queries';
+
+#scs section {
+    width: 94%;
+    margin: 0 auto;
+}
+
+#treehouse,
+#netmatters {
+    color: $background;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+    top: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#treehouse {
+    background-color: $treehouse;
+}
+
+.treehouse-logo {
+    background-color: $background;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 15px;
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    border: 5px solid $treehouse;
+}
+
+#netmatters {
+    background-color: $netmatters;
+    top: 100px;
+}
+
+.netmatters-logo {
+    background-color: $background;
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    padding: 5px;
+    height: 100px;
+    border: 5px solid $netmatters;
+    // padding-right: 45px;
+    border-radius: 50px;
+}
