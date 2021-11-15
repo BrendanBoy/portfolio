@@ -13,3 +13,11 @@ input[type="submit"]:hover {
     color: $background;
     background-color: $body-text;
 }
+
+.project:hover {
+    color: $project-link;
+    img {
+        opacity: 0.7;
+        box-shadow: 0 0 5px 5px $project-link;
+    }
+}
