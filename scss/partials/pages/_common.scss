@@ -1,11 +1,46 @@
+.page-mob-nav {
+    background-color: $theme;
+}
+
 #about, 
 #coding,
 #scs {
-    h1 {
-        text-align: center;
-    }
     section {
         width: 94%;
         margin: 0 auto;
+    }
+}
+
+.header {
+    &-image {
+        position: relative;
+        background-color: $theme;
+        height: 116px;
+    }
+    &-text {
+        color: $background;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 100px;
+        margin-right: 5px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .header-text {
+        margin: 0;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &-image {
+            height: 143px;
+        }
+        &-text {
+            padding-top: 53px;
+        }
     }
 }
