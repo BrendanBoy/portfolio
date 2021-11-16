@@ -1,0 +1,11 @@
+#about h1,
+#coding h1,
+#scs h1 {
+  text-align: center;
+}
+#about section,
+#coding section,
+#scs section {
+  width: 94%;
+  margin: 0 auto;
+}/*# sourceMappingURL=common.css.map */
