@@ -26,21 +26,3 @@
         padding-top: 15px;
     }
 }
-
-@media screen and (min-width: 576px) {
-    .header-text {
-        margin: 0;
-        padding-top: 40px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .header {
-        &-image {
-            height: 143px;
-        }
-        &-text {
-            padding-top: 53px;
-        }
-    }
-}

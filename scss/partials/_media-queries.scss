@@ -6,6 +6,10 @@
     .hero-text p {
         font-size: 24px;
     }
+    .header-text {
+        margin: 0;
+        padding-top: 40px;
+    }
     #projects {
         margin-top: 20px;
     }
@@ -28,6 +32,14 @@
     main,
     footer {
         margin-left: 180px;
+    }
+    .header {
+        &-image {
+            height: 143px;
+        }
+        &-text {
+            padding-top: 53px;
+        }
     }
 }
 

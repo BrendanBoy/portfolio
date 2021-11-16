@@ -249,20 +249,6 @@ footer .scroll-btn {
   padding-top: 15px;
 }
 
-@media screen and (min-width: 576px) {
-  .header-text {
-    margin: 0;
-    padding-top: 40px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-image {
-    height: 143px;
-  }
-  .header-text {
-    padding-top: 53px;
-  }
-}
 #scs {
   padding-bottom: 120px;
 }
@@ -345,6 +331,11 @@ input[type=submit]:hover {
     font-size: 24px;
   }
 
+  .header-text {
+    margin: 0;
+    padding-top: 40px;
+  }
+
   #projects {
     margin-top: 20px;
   }
@@ -370,6 +361,13 @@ input[type=submit]:hover {
 main,
 footer {
     margin-left: 180px;
+  }
+
+  .header-image {
+    height: 143px;
+  }
+  .header-text {
+    padding-top: 53px;
   }
 }
 @media screen and (min-width: 992px) {
