@@ -247,15 +247,14 @@ footer .scroll-btn {
 .header-image {
   position: relative;
   background-color: teal;
-  height: 116px;
+  height: 60px;
 }
 .header-text {
   color: white;
   text-align: center;
   margin-top: 0;
-  margin-left: 100px;
-  margin-right: 5px;
-  padding-top: 15px;
+  padding-top: 10px;
+  margin-left: 54px;
 }
 
 #scs {
@@ -331,6 +330,12 @@ input[type=submit]:hover {
 }
 
 /* Media Queries */
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+    padding-top: 8px;
+  }
+}
 @media screen and (min-width: 576px) {
   #hero h1 {
     font-size: 48px;
@@ -342,7 +347,6 @@ input[type=submit]:hover {
 
   .header-text {
     margin: 0;
-    padding-top: 40px;
   }
 
   #projects {
