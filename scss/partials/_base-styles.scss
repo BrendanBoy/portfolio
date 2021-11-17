@@ -1,4 +1,8 @@
 /* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;

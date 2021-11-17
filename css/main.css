@@ -16,6 +16,10 @@ a, a:hover, a:focus, a:active {
 }
 
 /* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
@@ -56,6 +60,7 @@ h2 {
   margin: 5px;
   padding: 5px 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -81,11 +86,14 @@ h2 {
   border-top: 3px solid teal;
   border-bottom: 3px solid teal;
 }
+.main-nav li:last-child a {
+  display: block;
+}
 .main-nav li:last-child:hover {
   background-color: teal;
   color: #fff;
 }
-.main-nav li:not(:last-child) a:hover {
+.main-nav li:not(:last-child) a:hover .link {
   border-bottom: 3px solid teal;
 }
 
@@ -214,6 +222,7 @@ input[type=submit] {
   border: 3px solid #252525;
   border-radius: 6px;
   max-width: 100%;
+  cursor: pointer;
 }
 
 footer {

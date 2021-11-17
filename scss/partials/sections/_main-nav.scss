@@ -15,16 +15,28 @@
     li {
         padding: 10px 0;
         margin: 20px 0;
+        // this is here in case I want to make the sidebar links block level items
+        // while keeping the bottom border hover state as it is
+        // a {
+        //     display: block;
+        // }
         &:last-child {
             border-top: 3px solid $theme;
             border-bottom: 3px solid $theme;
+            a {
+                display: block;
+            }
             &:hover {
                 background-color: $theme;
                 color: $overlay;
             }
         }
         &:not(:last-child) a:hover {
-            border-bottom: 3px solid $theme;
+            // this is here in case I want to make the sidebar links block level items
+            // while keeping the bottom border hover state as it is
+            .link {
+                border-bottom: 3px solid $theme;
+            }
         }
     }
 }
