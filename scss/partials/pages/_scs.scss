@@ -13,6 +13,31 @@
     position: relative;
 }
 
+.profile {
+    margin-left: auto;
+    width: 200px;
+    display: flex;
+    background-color: $background;
+    color: $body-text;
+    font-size: 14px;
+    height: 54px;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: 0 0 4px black inset;
+    img {
+        border-radius: 50%;
+        height: 46px;
+        margin: 4px;
+        border: 2px solid $treehouse;
+        padding: 2px;
+        
+    }
+}
+
+.p-text {
+    margin-left: 10px;
+}
+
 #treehouse {
     background-color: $treehouse;
 }

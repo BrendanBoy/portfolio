@@ -26,3 +26,7 @@ input[type="submit"]:hover {
         box-shadow: 0 0 5px 5px $project-link;
     }
 }
+
+.profile:hover {
+    background-color: darken($color: $background, $amount: 15%);
+}
