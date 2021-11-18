@@ -334,6 +334,10 @@ input[type=submit]:hover {
   box-shadow: 0 0 5px 5px #9b9a9a;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .hero-image {
     background-image: url("/img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");

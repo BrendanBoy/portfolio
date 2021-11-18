@@ -1,3 +1,6 @@
+html {
+    overflow-x: hidden;
+}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .hero-image {
         background-image: url('/img/pexels-daria-shevtsova-1884303-lg-tiny.jpg');
