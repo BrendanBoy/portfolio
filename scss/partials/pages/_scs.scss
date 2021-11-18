@@ -32,6 +32,9 @@
 #netmatters {
     background-color: $netmatters;
     top: 100px;
+    ul {
+        list-style: inside;
+    }
 }
 
 .netmatters-logo {
