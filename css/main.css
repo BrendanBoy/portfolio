@@ -326,7 +326,8 @@ footer .scroll-btn {
   list-style: inside;
 }
 
-.netmatters-logo {
+.netmatters-logo,
+.netmatters-logo-sm {
   background-color: white;
   position: absolute;
   top: -50px;
@@ -335,6 +336,10 @@ footer .scroll-btn {
   height: 100px;
   border: 5px solid #333645;
   border-radius: 50px;
+}
+
+.netmatters-logo {
+  display: none;
 }
 
 .mobile-nav:hover {
@@ -421,9 +426,11 @@ html {
     font-size: 20px;
   }
 
-  #treehouse,
-#netmatters {
-    padding-top: 5px;
+  .netmatters-logo {
+    display: block;
+  }
+  .netmatters-logo-sm {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -474,6 +481,10 @@ footer {
 
   #last_name {
     margin-left: auto;
+  }
+
+  .netmatters-logo {
+    padding-right: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
