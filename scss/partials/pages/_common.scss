@@ -11,6 +11,18 @@
     }
 }
 
+#about,
+#coding {
+    background-color: lighten($color: $theme, $amount: 65%);
+    min-height: 100vh;
+    padding: 20px 0 20px;
+    section {
+        background-color: $background;
+        padding: 20px;
+        border-radius: 25px;
+    }
+}
+
 .header {
     &-image {
         position: relative;

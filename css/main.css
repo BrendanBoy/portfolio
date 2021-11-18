@@ -249,6 +249,19 @@ footer .scroll-btn {
   margin: 0 auto;
 }
 
+#about,
+#coding {
+  background-color: #cdffff;
+  min-height: 100vh;
+  padding: 20px 0 20px;
+}
+#about section,
+#coding section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+
 .header-image {
   position: relative;
   background-color: teal;
