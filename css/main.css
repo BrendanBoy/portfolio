@@ -121,8 +121,6 @@ h2 {
 }
 
 .hero-image {
-  background-image: url("/img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
-  background-color: rgba(0, 128, 128, 0.3);
   background-image: linear-gradient(180deg, transparent, 25%, rgba(0, 128, 128, 0.6)), url("../img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -336,6 +334,15 @@ input[type=submit]:hover {
   box-shadow: 0 0 5px 5px #9b9a9a;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .hero-image {
+    background-image: url("/img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
+  }
+
+  .project {
+    display: block;
+  }
+}
 /* Media Queries */
 @media screen and (max-width: 350px) {
   h1 {

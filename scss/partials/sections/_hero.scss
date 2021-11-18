@@ -10,8 +10,6 @@
 .hero {
     &-image {
         background: {
-            image: url('/img/pexels-daria-shevtsova-1884303-lg-tiny.jpg');
-            color: rgba(0, 128, 128, .3);
             image: linear-gradient(180deg, transparent, 25%, rgba($theme, 0.6)), url('../img/pexels-daria-shevtsova-1884303-lg-tiny.jpg');
             position: center;
             repeat: no-repeat;
