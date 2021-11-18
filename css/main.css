@@ -313,6 +313,10 @@ footer .scroll-btn {
   border-radius: 50px;
 }
 
+.mobile-nav:hover {
+  box-shadow: 0 0 2px 2px white;
+}
+
 .initials:hover {
   color: white;
   background-color: teal;
