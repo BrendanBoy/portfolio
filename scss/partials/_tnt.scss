@@ -14,7 +14,8 @@ input[type="submit"]:hover {
     background-color: $body-text;
 }
 
-.project:hover {
+.project-img:hover,
+.p-link:hover {
     color: $project-link;
     img {
         opacity: 0.7;

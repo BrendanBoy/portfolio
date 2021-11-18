@@ -3,7 +3,10 @@ html {
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .project {
-        display: block;
+        display: inline;
+    }
+    .p-link {
+        padding-bottom: 10px;
     }
 }
 
