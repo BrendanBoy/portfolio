@@ -26,10 +26,6 @@ body {
   color: #252525;
 }
 
-main {
-  margin-bottom: 120px;
-}
-
 h1 {
   margin-top: 0;
 }
@@ -252,8 +248,8 @@ footer .scroll-btn {
 #about,
 #coding {
   background-color: #cdffff;
-  min-height: 100vh;
-  padding: 20px 0 20px;
+  min-height: calc(100vh - 60px);
+  padding: 30px 0 30px;
 }
 #about section,
 #coding section {
@@ -273,6 +269,11 @@ footer .scroll-btn {
   margin-top: 0;
   padding-top: 10px;
   margin-left: 54px;
+}
+
+.about-foot,
+.code-foot {
+  display: none;
 }
 
 #scs {
@@ -466,6 +467,11 @@ footer {
   }
   .header-text {
     padding-top: 53px;
+  }
+
+  #about,
+#coding {
+    min-height: calc(100vh - 143px);
   }
 }
 @media screen and (min-width: 992px) {

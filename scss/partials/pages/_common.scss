@@ -14,8 +14,8 @@
 #about,
 #coding {
     background-color: lighten($color: $theme, $amount: 65%);
-    min-height: 100vh;
-    padding: 20px 0 20px;
+    min-height: calc(100vh - 60px);
+    padding: 30px 0 30px;
     section {
         background-color: $background;
         padding: 20px;
@@ -36,4 +36,8 @@
         padding-top: 10px;
         margin-left: 54px;
     }
+}
+.about-foot,
+.code-foot {
+    display: none;
 }
