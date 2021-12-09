@@ -234,7 +234,7 @@ h2 {
   font-weight: 600;
 }
 
-.contact-form {
+#contact-form {
   width: 100%;
 }
 
@@ -521,7 +521,7 @@ footer {
     width: 25%;
   }
 
-  .contact-form {
+  #contact-form {
     width: 70%;
     margin-top: 20px;
   }
