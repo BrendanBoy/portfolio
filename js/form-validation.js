@@ -2,6 +2,7 @@ const form = document.getElementById('contact-form');
 const firstName = document.getElementById('first_name');
 const lastName = document.getElementById('last_name');
 const userEmail = document.getElementById('user_email');
+const userPhone = document.getElementById('user_phone');
 // subject - not sure if I want to make this required
 const userMessage = document.getElementById('user_message');
 
@@ -10,6 +11,10 @@ const regTel = /\d{11}/;
 
 function chkMail(email) {
     return regEmail.test(email);
+}
+
+function chkTel(phone) {
+    return regTel.test(phone);
 }
 
 // I'm sure this could be more concise
@@ -23,6 +28,8 @@ form.addEventListener('submit', (event) => {
     } else if (chkMail(userEmail.value) == false) {
         console.log(`Please enter a valid email address ${firstName.value}`);
         document.getElementById('error-msg').innerHTML=`Please enter a valid email address ${firstName.value}`;
+    } else if (chkTel(userPhone.value) == false) {
+        document.getElementById('error-msg').innerHTML=`Please enter a valid telephone number ${firstName.value}`;
     } else if (userMessage.value == '' || userMessage.value == null) {
         console.log(`Did you not want to send me a message ${firstName.value}?`);
         document.getElementById('error-msg').innerHTML=`Did you not want to send me a message ${firstName.value}?`;
