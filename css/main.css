@@ -68,6 +68,35 @@ h2 {
   cursor: pointer;
 }
 
+.hidden-nav {
+  text-align: center;
+  overflow-y: auto;
+}
+.hidden-nav ul {
+  padding-top: 40px;
+}
+.hidden-nav li {
+  padding: 10px 0;
+  margin: 20px 0;
+}
+.hidden-nav li:last-child {
+  border-top: 3px solid teal;
+  border-bottom: 3px solid teal;
+}
+.hidden-nav li:last-child a {
+  display: block;
+}
+.hidden-nav li:last-child:hover {
+  background-color: teal;
+  color: #fff;
+}
+.hidden-nav li:not(:last-child) a:hover .link {
+  border-bottom: 3px solid teal;
+}
+.hidden-nav .initials {
+  border-top: 3px solid teal;
+}
+
 .main-nav {
   display: none;
   height: 100%;

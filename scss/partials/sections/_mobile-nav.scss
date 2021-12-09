@@ -10,3 +10,35 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.hidden-nav {
+    text-align: center;
+    overflow-y: auto;
+    ul {
+        padding-top: 40px;
+    }
+    li {
+        padding: 10px 0;
+        margin: 20px 0;
+        &:last-child {
+            border-top: 3px solid $theme;
+            border-bottom: 3px solid $theme;
+            a {
+                display: block;
+            }
+            &:hover {
+                background-color: $theme;
+                color: $overlay;
+            }
+        }
+        &:not(:last-child) a:hover {
+            .link {
+                border-bottom: 3px solid $theme;
+            }
+        }
+    }
+    .initials {
+        border-top: 3px solid $theme;
+
+    }
+}
