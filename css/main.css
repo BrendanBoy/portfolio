@@ -264,6 +264,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.note {
+  color: #757575;
+  float: right;
+}
+
 footer {
   position: relative;
   margin-top: 120px;
