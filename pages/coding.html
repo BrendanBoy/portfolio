@@ -48,6 +48,58 @@
         <section>
             <h2 class="sr-only">Under Construction</h2>
             <p>Coming Soon...</p>
+            <h2>Netmatters Reflection</h2>
+            <pre>
+                <code class="language-scss">
+                    // Section Colours
+                    $design: #926fb1;
+                    $support: #4183d7;
+                    $telecoms: #d64541;
+                    $software: #67809f;
+                    $marketing: #2ecc71;
+                    $security: #f62459;
+
+                    // Create a map
+                    $service-colours: (
+                    "design": $design,
+                    "support": $support,
+                    "telecoms": $telecoms,
+                    "software": $software,
+                    "marketing": $marketing,
+                    "security": $security,
+                    );
+
+                    @mixin circle-icon($dim) {
+                        color: white;
+                        border-radius: 50%;
+                        text-align: center;
+                        align-self: center;
+                        width: $dim;
+                        height: $dim;
+                    }  
+
+                    // setting up the service cards
+                    @each $name, $colour in ($service-colours) {
+                        .#{$name} {
+                        i {
+                            @include circle-icon(60px);
+                            background-color: $colour;
+                            margin-bottom: 17px;
+                            font-size: 23px;
+                            line-height: 60px;
+                        }
+                        &:hover {
+                            color: white;
+                            background-color: $colour;
+                            i, .btn {
+                            color: $colour;
+                            background-color: white;
+                            }
+                        }
+                        }
+                    }
+                </code>
+            </pre>
         </section>
     </main>
     <footer class="code-foot">
