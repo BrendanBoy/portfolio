@@ -188,6 +188,7 @@ h2 {
 }
 
 .project {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -210,6 +211,34 @@ h2 {
   font-weight: 600;
   font-size: 12px;
   margin-bottom: 10px;
+}
+.project:hover .detail {
+  visibility: visible;
+}
+
+.detail {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  background-color: #252525;
+  color: white;
+  padding: 20px;
+  top: 100%;
+  border-radius: 8px;
+}
+.detail::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -36px;
+  border-width: 36px;
+  border-style: solid;
+  border-color: transparent transparent #252525 transparent;
+}
+.detail:hover {
+  visibility: visible;
 }
 
 #contact {
