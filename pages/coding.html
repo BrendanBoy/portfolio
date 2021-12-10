@@ -47,9 +47,11 @@
     <main id="coding">
         <section id="example-1">
             <h2>Netmatters Reflection</h2>
+            <p>I wrote this piece of code to populate the CSS classes of the Service Card section of the Netmatters home page.</p>
             <pre>
                 <code class="language-scss">
-                    // Section Colours
+                    // Assigning the theme colours to variables
+                    // to aid reuse throughout the project
                     $design: #926fb1;
                     $support: #4183d7;
                     $telecoms: #d64541;
@@ -57,7 +59,7 @@
                     $marketing: #2ecc71;
                     $security: #f62459;
 
-                    // Create a map
+                    // Creating a map of the colour variables
                     $service-colours: (
                     "design": $design,
                     "support": $support,
@@ -67,6 +69,7 @@
                     "security": $security,
                     );
 
+                    // A mixin to create the icon backgrounds
                     @mixin circle-icon($dim) {
                         color: white;
                         border-radius: 50%;
@@ -76,16 +79,26 @@
                         height: $dim;
                     }  
 
-                    // setting up the service cards
+                    // Setting up the service cards
+                    // An each loop iterating through 
+                    // the colour map
                     @each $name, $colour in ($service-colours) {
+                        // Using interpolation to assign 
+                        // a class name using the map key
                         .#{$name} {
                         i {
+                            // Calling the mixin
                             @include circle-icon(60px);
+                            // Setting the colour to 
+                            // the map value
                             background-color: $colour;
                             margin-bottom: 17px;
                             font-size: 23px;
                             line-height: 60px;
                         }
+                        // Assigning the values for when
+                        // the service card is hovered over 
+                        // and the colours change
                         &:hover {
                             color: white;
                             background-color: $colour;
