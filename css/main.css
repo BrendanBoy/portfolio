@@ -80,21 +80,21 @@ h2 {
   margin: 20px 0;
 }
 .hidden-nav li:last-child {
-  border-top: 3px solid teal;
-  border-bottom: 3px solid teal;
+  border-top: 3px solid #1b2b2b;
+  border-bottom: 3px solid #1b2b2b;
 }
 .hidden-nav li:last-child a {
   display: block;
 }
 .hidden-nav li:last-child:hover {
-  background-color: teal;
+  background-color: #1b2b2b;
   color: #fff;
 }
 .hidden-nav li:not(:last-child) a:hover .link {
-  border-bottom: 3px solid teal;
+  border-bottom: 3px solid #1b2b2b;
 }
 .hidden-nav .initials {
-  border-top: 3px solid teal;
+  border-top: 3px solid #1b2b2b;
 }
 
 .main-nav {
@@ -104,7 +104,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  border-right: 3px solid teal;
+  border-right: 3px solid #1b2b2b;
   font-weight: 600;
   text-align: center;
   overflow-y: auto;
@@ -117,25 +117,25 @@ h2 {
   margin: 20px 0;
 }
 .main-nav li:last-child {
-  border-top: 3px solid teal;
-  border-bottom: 3px solid teal;
+  border-top: 3px solid #1b2b2b;
+  border-bottom: 3px solid #1b2b2b;
 }
 .main-nav li:last-child a {
   display: block;
 }
 .main-nav li:last-child:hover {
-  background-color: teal;
+  background-color: #1b2b2b;
   color: #fff;
 }
 .main-nav li:not(:last-child) a:hover .link {
-  border-bottom: 3px solid teal;
+  border-bottom: 3px solid #1b2b2b;
 }
 
 .initials {
   font-size: 72px;
-  color: teal;
+  color: #1b2b2b;
   letter-spacing: 7px;
-  border-bottom: 3px solid teal;
+  border-bottom: 3px solid #1b2b2b;
   padding: 20px 0;
 }
 
@@ -145,7 +145,7 @@ h2 {
 .socials i {
   height: 26px;
   width: 26px;
-  color: teal;
+  color: #1b2b2b;
   padding: 5px;
 }
 
@@ -155,7 +155,7 @@ h2 {
 }
 
 .hero-image {
-  background-image: linear-gradient(180deg, transparent 25%, rgba(0, 128, 128, 0.6)), url("../img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
+  background-image: linear-gradient(180deg, transparent 25%, rgba(27, 43, 43, 0.6)), url("../img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,7 +307,7 @@ footer .scroll-btn {
 }
 
 .page-mob-nav {
-  background-color: teal;
+  background-color: #1b2b2b;
 }
 
 #about section,
@@ -319,7 +319,7 @@ footer .scroll-btn {
 
 #about,
 #coding {
-  background-color: #cdffff;
+  background-color: #bcd5d5;
   min-height: calc(100vh - 60px);
   padding: 30px 0 30px;
 }
@@ -332,7 +332,7 @@ footer .scroll-btn {
 
 .header-image {
   position: relative;
-  background-color: teal;
+  background-color: #1b2b2b;
   height: 60px;
 }
 .header-text {
@@ -434,12 +434,12 @@ footer .scroll-btn {
 
 .initials:hover {
   color: white;
-  background-color: teal;
+  background-color: #1b2b2b;
 }
 
 .socials i:hover {
   color: white;
-  background-color: teal;
+  background-color: #1b2b2b;
   border-radius: 50%;
 }
 
