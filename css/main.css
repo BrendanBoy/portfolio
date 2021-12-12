@@ -80,21 +80,21 @@ h2 {
   margin: 20px 0;
 }
 .hidden-nav li:last-child {
-  border-top: 3px solid #1b2b2b;
-  border-bottom: 3px solid #1b2b2b;
+  border-top: 3px solid #111820;
+  border-bottom: 3px solid #111820;
 }
 .hidden-nav li:last-child a {
   display: block;
 }
 .hidden-nav li:last-child:hover {
-  background-color: #1b2b2b;
+  background-color: #111820;
   color: #fff;
 }
 .hidden-nav li:not(:last-child) a:hover .link {
-  border-bottom: 3px solid #1b2b2b;
+  border-bottom: 3px solid #111820;
 }
 .hidden-nav .initials {
-  border-top: 3px solid #1b2b2b;
+  border-top: 3px solid #111820;
 }
 
 .main-nav {
@@ -104,7 +104,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  border-right: 3px solid #1b2b2b;
+  border-right: 3px solid #111820;
   font-weight: 600;
   text-align: center;
   overflow-y: auto;
@@ -117,25 +117,25 @@ h2 {
   margin: 20px 0;
 }
 .main-nav li:last-child {
-  border-top: 3px solid #1b2b2b;
-  border-bottom: 3px solid #1b2b2b;
+  border-top: 3px solid #111820;
+  border-bottom: 3px solid #111820;
 }
 .main-nav li:last-child a {
   display: block;
 }
 .main-nav li:last-child:hover {
-  background-color: #1b2b2b;
+  background-color: #111820;
   color: #fff;
 }
 .main-nav li:not(:last-child) a:hover .link {
-  border-bottom: 3px solid #1b2b2b;
+  border-bottom: 3px solid #111820;
 }
 
 .initials {
   font-size: 72px;
-  color: #1b2b2b;
+  color: #111820;
   letter-spacing: 7px;
-  border-bottom: 3px solid #1b2b2b;
+  border-bottom: 3px solid #111820;
   padding: 20px 0;
 }
 
@@ -145,7 +145,7 @@ h2 {
 .socials i {
   height: 26px;
   width: 26px;
-  color: #1b2b2b;
+  color: #111820;
   padding: 5px;
 }
 
@@ -155,7 +155,7 @@ h2 {
 }
 
 .hero-image {
-  background-image: linear-gradient(180deg, transparent 25%, rgba(27, 43, 43, 0.6)), url("../img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
+  background-image: linear-gradient(180deg, transparent 25%, rgba(17, 24, 32, 0.6)), url("../img/pexels-daria-shevtsova-1884303-lg-tiny.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,6 +225,7 @@ h2 {
   padding: 20px;
   top: 100%;
   border-radius: 8px;
+  font-size: 14px;
 }
 .detail::after {
   content: "";
@@ -232,8 +233,8 @@ h2 {
   z-index: 1;
   bottom: 100%;
   left: 50%;
-  margin-left: -36px;
-  border-width: 36px;
+  margin-left: -25px;
+  border-width: 25px;
   border-style: solid;
   border-color: transparent transparent #252525 transparent;
 }
@@ -307,7 +308,7 @@ footer .scroll-btn {
 }
 
 .page-mob-nav {
-  background-color: #1b2b2b;
+  background-color: #111820;
 }
 
 #about section,
@@ -316,10 +317,15 @@ footer .scroll-btn {
   width: 94%;
   margin: 0 auto;
 }
+#about a,
+#coding a,
+#scs a {
+  text-decoration: underline;
+}
 
 #about,
 #coding {
-  background-color: #bcd5d5;
+  background-color: #aabdd2;
   min-height: calc(100vh - 60px);
   padding: 30px 0 30px;
 }
@@ -332,7 +338,7 @@ footer .scroll-btn {
 
 .header-image {
   position: relative;
-  background-color: #1b2b2b;
+  background-color: #111820;
   height: 60px;
 }
 .header-text {
@@ -434,12 +440,12 @@ footer .scroll-btn {
 
 .initials:hover {
   color: white;
-  background-color: #1b2b2b;
+  background-color: #111820;
 }
 
 .socials i:hover {
   color: white;
-  background-color: #1b2b2b;
+  background-color: #111820;
   border-radius: 50%;
 }
 

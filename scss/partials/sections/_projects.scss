@@ -46,14 +46,15 @@
     padding: 20px;
     top: 100%;
     border-radius: 8px;
+    font-size: 14px;
     &::after {
         content: "";
         position: absolute;
         z-index: 1;
         bottom: 100%;
         left: 50%;
-        margin-left: -36px;
-        border-width: 36px;
+        margin-left: -25px;
+        border-width: 25px;
         border-style: solid;
         border-color: transparent transparent #252525 transparent;
     }

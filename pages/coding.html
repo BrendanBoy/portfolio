@@ -47,7 +47,7 @@
     <main id="coding">
         <section id="example-1">
             <h2>Netmatters Reflection</h2>
-            <p>I wrote this piece of code to populate the CSS classes of the Service Card section of the Netmatters home page.</p>
+            <p>I wrote this piece of code to populate the CSS classes of the Service Card section of the <a href="https://netmatters.brendan-boyle.netmatters-scs.co.uk/#service-cards" target="_blank">Netmatters home page.</a></p>
             <pre>
                 <code class="language-scss">
                     // Assigning the theme colours to variables
@@ -86,31 +86,35 @@
                         // Using interpolation to assign 
                         // a class name using the map key
                         .#{$name} {
-                        i {
-                            // Calling the mixin
-                            @include circle-icon(60px);
-                            // Setting the colour to 
-                            // the map value
-                            background-color: $colour;
-                            margin-bottom: 17px;
-                            font-size: 23px;
-                            line-height: 60px;
-                        }
-                        // Assigning the values for when
-                        // the service card is hovered over 
-                        // and the colours change
-                        &:hover {
-                            color: white;
-                            background-color: $colour;
-                            i, .btn {
-                            color: $colour;
-                            background-color: white;
+                            // Targeting the icon element using nesting
+                            i {
+                                // Calling the mixin
+                                @include circle-icon(60px);
+                                // Setting the colour to 
+                                // the map value
+                                background-color: $colour;
+                                margin-bottom: 17px;
+                                font-size: 23px;
+                                line-height: 60px;
                             }
-                        }
+                            // Assigning the values for when
+                            // the service card is hovered over 
+                            // and the colours change
+                            &:hover {
+                                color: white;
+                                background-color: $colour;
+                                i, .btn {
+                                color: $colour;
+                                background-color: white;
+                                }
+                            }
                         }
                     }
                 </code>
             </pre>
+            <p>The code above is written in Sass (syntactically awesome style sheets), a CSS preprocessor.</p>
+            <p>Sass extends on the CSS language using techniques like vaiables, loops, nesting, inheritance and mixins. These methods allow the creation of much more efficient code.</p>
+            <p>In the example above, twenty seven lines of code define the each loop and mixin, when this is compiled it creates 120 lines of CSS rules.</p>
             <img src="../img/Design-card.png" alt="Web Design Service Card">
             <img src="../img/Design-card-hover.png" alt="Web Design Service Card, Highlighted">
         </section>
