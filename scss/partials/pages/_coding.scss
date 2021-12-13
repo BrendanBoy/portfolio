@@ -1,0 +1,9 @@
+.card-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    img {
+        border: 1px solid $theme;
+        max-width: 100%;
+    }
+}

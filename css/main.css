@@ -347,6 +347,10 @@ footer .scroll-btn {
   padding: 20px;
   border-radius: 25px;
 }
+#about section h2,
+#coding section h2 {
+  margin-top: 0;
+}
 
 .header-image {
   position: relative;
@@ -364,6 +368,16 @@ footer .scroll-btn {
 .about-foot,
 .code-foot {
   display: none;
+}
+
+.card-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card-images img {
+  border: 1px solid #111820;
+  max-width: 100%;
 }
 
 #scs {
@@ -603,5 +617,14 @@ footer {
 
   .project {
     width: 32%;
+  }
+
+  #about,
+#coding {
+    padding: 40px;
+  }
+  #about section,
+#coding section {
+    padding: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
