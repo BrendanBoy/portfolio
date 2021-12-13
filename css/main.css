@@ -365,11 +365,6 @@ footer .scroll-btn {
   margin-left: 54px;
 }
 
-.about-foot,
-.code-foot {
-  display: none;
-}
-
 .card-images {
   display: flex;
   justify-content: space-around;
