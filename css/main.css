@@ -55,46 +55,62 @@ h2 {
   overflow: hidden;
 }
 
-.mobile-nav {
+.mobile-btn {
   position: absolute;
   color: #fff;
-  height: auto;
+  height: 48px;
+  width: 54px;
   z-index: 5;
   font-size: 32px;
   border: 3px solid #fff;
+  background-color: transparent;
   margin: 5px;
   padding: 0 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.hidden-nav {
+.mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  min-height: 100vh;
+  width: 60%;
+  z-index: 5;
+  background-color: white;
+  font-weight: 600;
+  transition: 0.4s;
   text-align: center;
   overflow-y: auto;
 }
-.hidden-nav ul {
-  padding-top: 40px;
+.mobile-nav.is-active {
+  left: 40%;
 }
-.hidden-nav li {
+.mobile-nav li {
   padding: 10px 0;
-  margin: 20px 0;
 }
-.hidden-nav li:last-child {
+.mobile-nav li:last-child {
   border-top: 3px solid #111820;
   border-bottom: 3px solid #111820;
 }
-.hidden-nav li:last-child a {
+.mobile-nav li:last-child a {
   display: block;
 }
-.hidden-nav li:last-child:hover {
+.mobile-nav li:last-child:hover {
   background-color: #111820;
   color: #fff;
 }
-.hidden-nav li:not(:last-child) a:hover .link {
+.mobile-nav li:not(:last-child) a:hover .link {
   border-bottom: 3px solid #111820;
 }
-.hidden-nav .initials {
-  border-top: 3px solid #111820;
+.mobile-nav .initials {
+  font-size: 48px;
+  background-color: #111820;
+  color: white;
+  letter-spacing: 7px;
+  border-bottom: 3px solid #111820;
+  padding: 10px 0;
 }
 
 .main-nav {
@@ -307,10 +323,6 @@ footer .scroll-btn {
   padding-bottom: 20px;
 }
 
-.page-mob-nav {
-  background-color: #111820;
-}
-
 #about section,
 #coding section,
 #scs section {
@@ -434,7 +446,7 @@ footer .scroll-btn {
   display: none;
 }
 
-.mobile-nav:hover {
+.mobile-btn:hover {
   box-shadow: 0 0 2px 2px white;
 }
 
@@ -526,7 +538,7 @@ html {
   }
 }
 @media screen and (min-width: 768px) {
-  .mobile-nav {
+  .mobile-btn {
     display: none;
   }
 

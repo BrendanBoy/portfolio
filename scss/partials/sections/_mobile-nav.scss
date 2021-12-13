@@ -1,25 +1,37 @@
-.mobile-nav {
+.mobile-btn {
     position: absolute;
     color: $overlay;
-    height: auto;
+    height: 48px;
+    width: 54px; 
     z-index: 5;
     font-size: 32px;
     border: 3px solid $overlay;
+    background-color: transparent;
     margin: 5px;
     padding: 0 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.hidden-nav {
+.mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    min-height: 100vh;
+    width: 60%;
+    z-index: 5;
+    background-color: $background;
+    font-weight: 600;
+    transition: 0.4s;
     text-align: center;
     overflow-y: auto;
-    ul {
-        padding-top: 40px;
+    &.is-active {
+        left: 40%;
     }
     li {
         padding: 10px 0;
-        margin: 20px 0;
+        // margin: 20px 0;
         &:last-child {
             border-top: 3px solid $theme;
             border-bottom: 3px solid $theme;
@@ -38,6 +50,11 @@
         }
     }
     .initials {
-        border-top: 3px solid $theme;
+        font-size: 48px;
+        background-color: $theme;
+        color: $background;
+        letter-spacing: 7px;
+        border-bottom: 3px solid $theme;
+        padding: 10px 0;
     }
 }

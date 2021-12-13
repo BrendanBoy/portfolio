@@ -1,3 +1,4 @@
+// Typewriter Effect
 const headType = document.getElementById('head-type');
 const paraType = document.getElementById('para-type');
 
@@ -21,7 +22,7 @@ paraWriter
     .typeString('Ninja')
     .pauseFor(300)
     .deleteChars(5)
-    .typeString('Spaceman?')
+    .typeString('Wizard?')
     .pauseFor(300)
     .deleteChars(9)
     .typeString('<strong>Web Developer</strong>')
