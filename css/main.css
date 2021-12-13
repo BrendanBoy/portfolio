@@ -380,6 +380,10 @@ footer .scroll-btn {
   max-width: 100%;
 }
 
+figcaption {
+  font-size: 14px;
+}
+
 #scs {
   padding-bottom: 120px;
 }
@@ -411,6 +415,7 @@ footer .scroll-btn {
 .profile img {
   border-radius: 50%;
   height: 46px;
+  width: 46px;
   margin: 4px;
   border: 2px solid #58c162;
   padding: 2px;
