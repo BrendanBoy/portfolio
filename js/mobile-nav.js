@@ -6,3 +6,7 @@ const mobileNav = document.querySelector('.mobile-nav');
 menuButton.addEventListener('click', function() {
     mobileNav.classList.toggle('is-active');
 });
+
+mobileNav.addEventListener('click', function() {
+    mobileNav.classList.toggle('is-active');
+});
