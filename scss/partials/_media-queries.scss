@@ -36,18 +36,42 @@
     }
 }
 
+// Sorting out the fixed header bar for mobile screens
 @media screen and (max-width: 767px) {
     .header-bar {
         position: fixed;
         width: 100vw;
+        z-index: 1;
+    }
+    .hero-image {
+        z-index: 2;
+    }
+    .mobile-btn {
+        background-color: transparent;
+        position: fixed;
     }
     header {
         padding-bottom: 60px;
+    }
+    // link target fixing
+    #projects,
+    #contact {
+        padding-top: 60px;
+        margin-top:-60px;
+    }
+    #about,
+    #coding,
+    #scs {
+        padding-top: 90px;
+        margin-top: -60px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .mobile-btn {
+        display: none;
+    }
+    .home-bar {
         display: none;
     }
     .main-nav {
