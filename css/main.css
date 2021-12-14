@@ -352,7 +352,7 @@ footer .scroll-btn {
   margin-top: 0;
 }
 
-.header-image {
+.header-bar {
   position: relative;
   background-color: #111820;
   height: 60px;
@@ -551,6 +551,16 @@ html {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-bar {
+    position: fixed;
+    width: 100vw;
+  }
+
+  header {
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .mobile-btn {
     display: none;
@@ -566,7 +576,7 @@ footer {
     margin-left: 180px;
   }
 
-  .header-image {
+  .header-bar {
     height: 143px;
   }
   .header-text {

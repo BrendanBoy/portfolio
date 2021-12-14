@@ -36,6 +36,16 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .header-bar {
+        position: fixed;
+        width: 100vw;
+    }
+    header {
+        padding-bottom: 60px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .mobile-btn {
         display: none;
@@ -49,7 +59,7 @@
         margin-left: 180px;
     }
     .header {
-        &-image {
+        &-bar {
             height: 143px;
         }
         &-text {
@@ -57,7 +67,7 @@
         }
     }
     #about,
-#coding {
+    #coding {
 
     min-height: calc(100vh - 143px);}
 }
