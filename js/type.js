@@ -24,6 +24,6 @@ paraWriter
     .deleteChars(5)
     .typeString('Wizard?')
     .pauseFor(300)
-    .deleteChars(9)
+    .deleteChars(7)
     .typeString('<strong>Web Developer</strong>')
     .start();
