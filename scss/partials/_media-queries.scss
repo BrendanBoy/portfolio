@@ -131,11 +131,14 @@
     .project {
         width: 32%;
     }
-    #about,
-    #coding {
+    #profile,
+    #example-1,
+    #intro {
         padding: 40px;
-        section {
-            padding: 40px;
-        }
     }
+    #about,
+#coding,
+#scs {
+    padding: 40px;
+}
 }

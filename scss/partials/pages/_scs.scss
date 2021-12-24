@@ -1,16 +1,33 @@
 #scs {
-    padding-bottom: 120px;
+    background-color: $theme-light;
+    padding-bottom: 120px !important;
 }
+
+#intro {
+    background-color: $background;
+    margin-bottom: 40px !important;
+    h2 {
+        margin-top: 0;
+    }
+}
+
 #treehouse,
 #netmatters {
     color: $background;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-top: 30px;
     top: 30px;
-    border-radius: 20px;
     position: relative;
+}
+
+#treehouse {
+    background-color: $treehouse;
+}
+
+#netmatters {
+    background-color: $netmatters;
+    top: 100px;
+    ul {
+        list-style: inside;
+    }
 }
 
 .profile {
@@ -39,10 +56,6 @@
     margin-left: 10px;
 }
 
-#treehouse {
-    background-color: $treehouse;
-}
-
 .treehouse-logo {
     background-color: $background;
     width: 100px;
@@ -53,14 +66,6 @@
     top: -50px;
     right: 25px;
     border: 5px solid $treehouse;
-}
-
-#netmatters {
-    background-color: $netmatters;
-    top: 100px;
-    ul {
-        list-style: inside;
-    }
 }
 
 .netmatters-logo,

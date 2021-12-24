@@ -1,6 +1,11 @@
+section {
+    max-width: 1200px;
+}
+
 #about, 
 #coding,
 #scs {
+    padding: 30px 0 30px;
     section {
         width: 94%;
         margin: 0 auto;
@@ -14,16 +19,29 @@
 #coding {
     background-color: $theme-light;
     min-height: calc(100vh - 60px);
-    padding: 30px 0 30px;
+    
     section {
         background-color: $background;
-        padding: 20px;
-        border-radius: 25px;
+        // padding: 20px;
+        // border-radius: 25px;
         h2 {
             margin-top: 0;
         }
     }
 }
+
+#profile,
+#example-1,
+#intro,
+#netmatters,
+#treehouse {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    border-radius: 20px;
+}
+
 
 .header {
     &-bar {
