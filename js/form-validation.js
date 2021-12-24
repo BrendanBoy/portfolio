@@ -18,23 +18,49 @@ function chkTel(phone) {
 }
 
 // I'm sure this could be more concise
+// form.addEventListener('submit', (event) => {
+//     if (firstName.value == '' || firstName.value == null) {
+//         document.getElementById('error-msg').innerHTML="Please enter your first name";
+//     } else if (lastName.value == '' || lastName == null) {
+//         document.getElementById('error-msg').innerHTML=`Please enter your last name ${firstName.value}`;
+//     } else if (chkMail(userEmail.value) == false) {
+//         document.getElementById('error-msg').innerHTML=`Please enter a valid email address ${firstName.value}`;
+//     } else if (chkTel(userPhone.value) == false) {
+//         document.getElementById('error-msg').innerHTML=`Please enter a valid telephone number ${firstName.value}`;
+//     } else if (userMessage.value == '' || userMessage.value == null) {
+//         document.getElementById('error-msg').innerHTML=`Did you not want to send me a message ${firstName.value}?`;
+//     } else {
+//         this.submit();
+//     }
+//     event.preventDefault();
+// });
+
 form.addEventListener('submit', (event) => {
+    let errors = false;
+    let message ='';
     if (firstName.value == '' || firstName.value == null) {
-        console.log('Please enter your first name');
-        document.getElementById('error-msg').innerHTML="Please enter your first name";
-    } else if (lastName.value == '' || lastName == null) {
-        console.log(`Please enter your last name ${firstName.value}`);
-        document.getElementById('error-msg').innerHTML=`Please enter your last name ${firstName.value}`;
-    } else if (chkMail(userEmail.value) == false) {
-        console.log(`Please enter a valid email address ${firstName.value}`);
-        document.getElementById('error-msg').innerHTML=`Please enter a valid email address ${firstName.value}`;
-    } else if (chkTel(userPhone.value) == false) {
-        document.getElementById('error-msg').innerHTML=`Please enter a valid telephone number ${firstName.value}`;
-    } else if (userMessage.value == '' || userMessage.value == null) {
-        console.log(`Did you not want to send me a message ${firstName.value}?`);
-        document.getElementById('error-msg').innerHTML=`Did you not want to send me a message ${firstName.value}?`;
-    } else {
-        this.submit();
+        message +="Please enter your first name </br>";
+        errors = true;
     }
-    event.preventDefault();
+    if (lastName.value == '' || lastName.value == null) {
+        message +="Please enter your last name </br>";
+        errors = true;
+    }
+    if (chkMail(userEmail.value) == false) {
+        message +="Please enter a valid email address </br>";
+        errors = true;
+    }
+    if (chkTel(userPhone.value) == false) {
+        message += "Please enter a valid UK telephone number </br>";
+        errors = true;
+    }
+    if (userMessage.value =='' || userMessage.value == null) {
+        message += "The message field is empty";
+        errors = true;
+    }
+    if (errors) {
+        document.getElementById('error-msg').innerHTML=message;
+        event.preventDefault();
+    }
+    else submit;
 });
