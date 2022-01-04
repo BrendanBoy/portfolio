@@ -28,6 +28,17 @@
     // #netmatters {
     //     padding-top: 5px;
     // }
+    #profile,
+    #example-1,
+    #intro,
+    #netmatters,
+    #treehouse {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        padding-top: 30px;
+        border-radius: 20px;
+    }
 }
 
 @media screen and (min-width: 600px) {
