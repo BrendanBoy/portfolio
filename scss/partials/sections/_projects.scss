@@ -1,6 +1,9 @@
 #projects {
     display: flex;
-    justify-content: space-between;
+    // This was changed because there are currently only two project cards
+    // remember to review this when the number of projects is increased
+    // justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 92%;
     margin: 0 auto;
