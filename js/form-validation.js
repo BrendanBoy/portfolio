@@ -1,3 +1,4 @@
+const allFields = document.getElementsByClassName('form-field');
 const form = document.getElementById('contact-form');
 const firstName = document.getElementById('first_name');
 const lastName = document.getElementById('last_name');
@@ -38,24 +39,32 @@ function chkTel(phone) {
 form.addEventListener('submit', (event) => {
     let errors = false;
     let message ='';
+    for ( let i = 0; i < allFields.length; i++ ) {
+        allFields[i].classList.remove("invalid");
+    }
     if (firstName.value == '' || firstName.value == null) {
         message +="Please enter your first name </br>";
+        firstName.classList.add("invalid");
         errors = true;
     }
     if (lastName.value == '' || lastName.value == null) {
         message +="Please enter your last name </br>";
+        lastName.classList.add("invalid");
         errors = true;
     }
     if (chkMail(userEmail.value) == false) {
         message +="Please enter a valid email address </br>";
+        userEmail.classList.add("invalid");
         errors = true;
     }
     if (chkTel(userPhone.value) == false) {
         message += "Please enter a valid UK telephone number </br>";
+        userPhone.classList.add("invalid");
         errors = true;
     }
     if (userMessage.value =='' || userMessage.value == null) {
         message += "The message field is empty";
+        userMessage.classList.add("invalid");
         errors = true;
     }
     if (errors) {
