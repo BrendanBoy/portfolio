@@ -140,9 +140,11 @@
     #projects {
         margin-top: 50px;
     }
-    .project {
-        width: 32%;
-    }
+    // This was removed because there are currently only two project cards
+    // remember to review this when the number of projects is increased
+    // .project {
+    //     width: 32%;
+    // }
     #profile,
     #example-1,
     #intro {

@@ -197,7 +197,7 @@ h2 {
 
 #projects {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 92%;
   margin: 0 auto;
@@ -684,10 +684,6 @@ footer {
 @media screen and (min-width: 1200px) {
   #projects {
     margin-top: 50px;
-  }
-
-  .project {
-    width: 32%;
   }
 
   #profile,
