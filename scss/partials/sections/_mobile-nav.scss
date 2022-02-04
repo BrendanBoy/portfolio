@@ -23,7 +23,7 @@
     z-index: 5;
     background-color: $background;
     font-weight: 600;
-    transition: 0.4s;
+    transition: left 0.4s;
     text-align: center;
     overflow-y: auto;
     &.is-active {
