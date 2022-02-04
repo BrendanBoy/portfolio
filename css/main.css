@@ -321,6 +321,20 @@ input[type=submit] {
   border: 1px solid red;
 }
 
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .blurb {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+  }
+  .blurb > div {
+    width: 48%;
+  }
+  .blurb > div > h2 {
+    margin-top: 0;
+  }
+}
 footer {
   position: relative;
   margin-top: 120px;
