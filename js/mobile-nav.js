@@ -2,14 +2,29 @@
 
 const menuButton = document.querySelector(".mobile-btn");
 const mobileNav = document.querySelector('.mobile-nav');
+const overlay = document.getElementById('overlay');
+const mainPage = document.querySelector('html');
 
-menuButton.addEventListener('click', function() {
-    mobileNav.classList.toggle('is-active');
-});
+// menuButton.addEventListener('click', function() {
+//     mobileNav.classList.toggle('is-active');
+// });
 
 mobileNav.addEventListener('click', function() {
-    mobileNav.classList.toggle('is-active');
+    // mobileNav.classList.toggle('is-active');
+    closeNav();
 });
+
+function openNav() {
+    mobileNav.classList.add('is-active');
+    overlay.style.display = "block";
+    mainPage.style.overflow = "hidden";
+}
+
+function closeNav() {
+    mobileNav.classList.remove('is-active');
+    overlay.style.display = "none";
+    mainPage.style.overflow = "auto";
+}
 
 const debounce = (func, wait, immediate) => {
 	var timeout;
@@ -27,7 +42,7 @@ const debounce = (func, wait, immediate) => {
 };
 
 var screenCheck = debounce(function() {
-    if (screen.width >= 768) {
+    if (window.innerWidth >= 768) {
         mobileNav.classList.remove('is-active');
     }
 }, 250);
