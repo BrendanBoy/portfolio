@@ -43,7 +43,7 @@ const debounce = (func, wait, immediate) => {
 
 var screenCheck = debounce(function() {
     if (window.innerWidth >= 768) {
-        mobileNav.classList.remove('is-active');
+        closeNav();
     }
 }, 250);
 
