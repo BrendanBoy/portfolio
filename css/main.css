@@ -391,6 +391,7 @@ section {
 
 #profile,
 #example-1,
+#example-2,
 #intro,
 #netmatters,
 #treehouse {
@@ -426,6 +427,18 @@ section {
 
 figcaption {
   font-size: 14px;
+}
+
+.example {
+  margin-bottom: 40px !important;
+}
+
+#example-2 figure {
+  margin: 0 auto;
+}
+#example-2 img {
+  border: 1px solid #111820;
+  max-width: 100%;
 }
 
 #scs {
@@ -599,6 +612,7 @@ html {
 
   #profile,
 #example-1,
+#example-2,
 #intro,
 #netmatters,
 #treehouse {
@@ -717,6 +731,7 @@ footer {
 
   #profile,
 #example-1,
+#example-2,
 #intro {
     padding: 40px;
   }
