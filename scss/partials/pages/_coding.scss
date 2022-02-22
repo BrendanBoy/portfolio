@@ -16,11 +16,17 @@ figcaption {
     margin-bottom: 40px !important;
 }
 #example-2 {
-    figure {
-        margin: 0 auto;
+    @media screen and (max-width: 1200px) {
+        figure {
+            margin: 0 auto;
+        }
     }
     img {
         border: 1px solid $theme;
         max-width: 100%;
     }
+}
+table {
+    width: 100%;
+    text-align: center;
 }

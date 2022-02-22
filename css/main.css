@@ -433,12 +433,19 @@ figcaption {
   margin-bottom: 40px !important;
 }
 
-#example-2 figure {
-  margin: 0 auto;
+@media screen and (max-width: 1200px) {
+  #example-2 figure {
+    margin: 0 auto;
+  }
 }
 #example-2 img {
   border: 1px solid #111820;
   max-width: 100%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
 }
 
 #scs {

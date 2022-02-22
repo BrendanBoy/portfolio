@@ -150,72 +150,75 @@
         </section>
         <section id="example-2" class="example">
             <h2>Database Challenge</h2>
-                <figure>
-                    <img src="../img/movie-database.png" alt="Movie Database">
-                    <figcaption>Movie Database table structure</figcaption>
-                </figure>
-                <pre>
-                    <code class="language-sql">
-                        SELECT 
-                        mov_title AS "Title", 
-                        dir_fname || ' ' || dir_lname AS "Director",
-                        rev_stars AS "Rating",
-                        mov_year AS "Year" 
+            <p>For this challenge I was given a choice of three data sets. Being a bit of a film buff I chose the one on movies, the table structure of this can be seen below.</p>
+            <figure>
+                <img src="../img/movie-database.png" alt="Movie Database">
+                <figcaption>Movie Database table structure</figcaption>
+            </figure>
+            <p>I wrote a query that selects the year in which the most film releases were recorded and displays the titles of the films from this year. The query pulls in data from the rating table so that this subset can be sorted by rating.</p>
+            <pre>
+                <code class="language-sql">
+                    SELECT 
+                    mov_title AS "Title", 
+                    dir_fname || ' ' || dir_lname AS "Director",
+                    rev_stars AS "Rating",
+                    mov_year AS "Year" 
 
-                        FROM movie m
-                        JOIN movie_direction md
-                        ON m.mov_id = md.mov_id
-                        JOIN director d
-                        ON md.dir_id = d.dir_id
-                        JOIN rating r
-                        ON m.mov_id = r.mov_id
+                    FROM movie m
+                    JOIN movie_direction md
+                    ON m.mov_id = md.mov_id
+                    JOIN director d
+                    ON md.dir_id = d.dir_id
+                    JOIN rating r
+                    ON m.mov_id = r.mov_id
 
-                        WHERE mov_year IN (
-                            SELECT mov_year 
-                            FROM movie
-                            GROUP BY mov_year
-                            ORDER BY COUNT(*) DESC
-                            LIMIT 1
-                        )
+                    WHERE mov_year IN (
+                        SELECT mov_year 
+                        FROM movie
+                        GROUP BY mov_year
+                        ORDER BY COUNT(*) DESC
+                        LIMIT 1
+                    )
 
-                        ORDER BY rev_stars DESC
-                        ;
-                    </code>
-                </pre>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Title</th>
-                            <th>Director</th>
-                            <th>Rating</th>
-                            <th>Year</th>
-                        </tr>
-                        <tr>
-                            <td>Princess Mononoke</td>
-                            <td>Hayao Miyazaki</td>
-                            <td>8.40</td>
-                            <td>1997</td>
-                        </tr>
-                        <tr>
-                            <td>Titanic</td>
-                            <td>James Cameron</td>
-                            <td>7.70</td>
-                            <td>1997</td>
-                        </tr>
-                        <tr>
-                            <td>Good Will Hunting</td>
-                            <td>Gus Van Sant</td>
-                            <td>4.0</td>
-                            <td>1997</td>
-                        </tr>
-                        <tr>
-                            <td>Boogie Nights</td>
-                            <td>Paul Thomas Anderson</td>
-                            <td>3.0</td>
-                            <td>1997</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    ORDER BY rev_stars DESC
+                    ;
+                </code>
+            </pre>
+            <p>The query also links to the director table, via movie_direction. The final output includes the film title, directors name, rating and year of release. I formatted the column headings to be a little more human-friendly. The result of my query can be seen in the table below. </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Rating</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>Princess Mononoke</td>
+                        <td>Hayao Miyazaki</td>
+                        <td>8.40</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>Titanic</td>
+                        <td>James Cameron</td>
+                        <td>7.70</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>Good Will Hunting</td>
+                        <td>Gus Van Sant</td>
+                        <td>4.0</td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>Boogie Nights</td>
+                        <td>Paul Thomas Anderson</td>
+                        <td>3.0</td>
+                        <td>1997</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
     <footer class="code-foot">
