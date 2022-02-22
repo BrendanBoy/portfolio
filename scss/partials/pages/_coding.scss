@@ -29,4 +29,10 @@ figcaption {
 table {
     width: 100%;
     text-align: center;
+    thead {
+        background-color: $theme-light;
+    }
+    tbody {
+        background-color: $theme-lighter;
+    }
 }

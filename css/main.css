@@ -447,6 +447,12 @@ table {
   width: 100%;
   text-align: center;
 }
+table thead {
+  background-color: #aabdd2;
+}
+table tbody {
+  background-color: #ccd7e4;
+}
 
 #scs {
   background-color: #aabdd2;

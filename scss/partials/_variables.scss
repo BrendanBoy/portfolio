@@ -1,6 +1,7 @@
 // Variables
 $theme: #111820;
 $theme-light: lighten($color: $theme, $amount: 65%);
+$theme-lighter: lighten($color: $theme, $amount: 75%);
 $background: white;
 $overlay: #fff;
 $body-text: #252525;
