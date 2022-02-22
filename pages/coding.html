@@ -154,6 +154,34 @@
                     <img src="../img/movie-database.png" alt="Movie Database">
                     <figcaption>Movie Database table structure</figcaption>
                 </figure>
+                <pre>
+                    <code class="language-sql">
+                        SELECT 
+                        mov_title AS "Title", 
+                        dir_fname || ' ' || dir_lname AS "Director",
+                        rev_stars AS "Rating",
+                        mov_year AS "Year" 
+
+                        FROM movie m
+                        JOIN movie_direction md
+                        ON m.mov_id = md.mov_id
+                        JOIN director d
+                        ON md.dir_id = d.dir_id
+                        JOIN rating r
+                        ON m.mov_id = r.mov_id
+
+                        WHERE mov_year IN (
+                            SELECT mov_year 
+                            FROM movie
+                            GROUP BY mov_year
+                            ORDER BY COUNT(*) DESC
+                            LIMIT 1
+                        )
+
+                        ORDER BY rev_stars DESC
+                        ;
+                    </code>
+                </pre>
                 <table>
                     <tbody>
                         <tr>
