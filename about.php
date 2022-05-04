@@ -32,6 +32,6 @@ include("inc/navigation.php");
             <p>Back To Top</p>
         </a>
     </footer>
-    <script src="/js/mobile-nav.js"></script>
+    <script src="js/mobile-nav.js"></script>
 </body>
 </html>

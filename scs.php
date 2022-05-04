@@ -21,11 +21,11 @@ include("inc/navigation.php");
         </section>
         <section id="treehouse">
             <h2>Treehouse</h2>
-            <img class="treehouse-logo" src="/img/treehouse-icon.png" alt="">
+            <img class="treehouse-logo" src="img/treehouse-icon.png" alt="">
             <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
             <a href="https://teamtreehouse.com/brendanboyle4" target="_blank">
                 <div class="profile">
-                    <img src="/img/treehouse-avatar.jpg" alt="">
+                    <img src="img/treehouse-avatar.jpg" alt="">
                     <div class="p-text">
                         My Profile<br>
                         Points: 10,157
@@ -35,8 +35,8 @@ include("inc/navigation.php");
         </section>
         <section id="netmatters">
             <h2>About Netmatters</h2>
-            <img class="netmatters-logo-sm" src="/img/n-logo.png" alt="">
-            <img class="netmatters-logo" src="/img/f-logo.png" alt="">
+            <img class="netmatters-logo-sm" src="img/n-logo.png" alt="">
+            <img class="netmatters-logo" src="img/f-logo.png" alt="">
             <ul>
                 <li>Established in 2008</li>
                 <li>Norfolk's leading technology company</li>
@@ -54,6 +54,6 @@ include("inc/navigation.php");
             <p>Back To Top</p>
         </a>
     </footer>
-    <script src="/js/mobile-nav.js"></script>
+    <script src="js/mobile-nav.js"></script>
 </body>
 </html>

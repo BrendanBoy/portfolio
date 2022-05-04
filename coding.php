@@ -88,11 +88,11 @@ include("inc/navigation.php");
             <p>These rules define the appearance of the Service Cards and how the colours change when the element is hovered over with the mouse pointer.</p>
             <div class="card-images">
                 <figure>
-                    <img src="../img/Design-card.png" alt="Web Design Service Card">
+                    <img src="img/Design-card.png" alt="Web Design Service Card">
                     <figcaption>The Design Service Card</figcaption>
                 </figure>
                 <figure>
-                    <img src="../img/Design-card-hover.png" alt="Web Design Service Card, Highlighted">
+                    <img src="img/Design-card-hover.png" alt="Web Design Service Card, Highlighted">
                     <figcaption>The Design Service Card hover state</figcaption>
                 </figure>
             </div>
@@ -101,7 +101,7 @@ include("inc/navigation.php");
             <h2>Database Challenge</h2>
             <p>For this challenge I was given a choice of three data sets. Being a bit of a film buff I chose the one on movies, the table structure of this can be seen below. I decided to see if I could find the most popular film of the bussiest year.</p>
             <figure>
-                <img src="../img/movie-database.png" alt="Movie Database">
+                <img src="img/movie-database.png" alt="Movie Database">
                 <figcaption>Movie Database table structure</figcaption>
             </figure>
             <p>I wrote a query that selects the year in which the most film releases were recorded and displays the titles of the films from this year. The query pulls in data from the rating table so that this subset can be sorted by rating.</p>
