@@ -328,6 +328,15 @@ input[type=submit] {
   float: right;
 }
 
+#error-msg li {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
 .invalid {
   border: 1px solid red;
 }

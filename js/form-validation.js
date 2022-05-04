@@ -38,36 +38,37 @@ function chkTel(phone) {
 
 form.addEventListener('submit', (event) => {
     let errors = false;
-    let message ='';
+    let message ="";
     for ( let i = 0; i < allFields.length; i++ ) {
         allFields[i].classList.remove("invalid");
     }
     if (firstName.value == '' || firstName.value == null) {
-        message +="Please enter your first name </br>";
+        message +="<li>Please enter your first name</li>";
         firstName.classList.add("invalid");
         errors = true;
     }
     if (lastName.value == '' || lastName.value == null) {
-        message +="Please enter your last name </br>";
+        message +="<li>Please enter your last name</li>";
         lastName.classList.add("invalid");
         errors = true;
     }
     if (chkMail(userEmail.value) == false) {
-        message +="Please enter a valid email address </br>";
+        message +="<li>Please enter a valid email address</li>";
         userEmail.classList.add("invalid");
         errors = true;
     }
     if (chkTel(userPhone.value) == false) {
-        message += "Please enter a valid UK telephone number </br>";
+        message += "<li>Please enter a valid UK telephone number</li>";
         userPhone.classList.add("invalid");
         errors = true;
     }
     if (userMessage.value =='' || userMessage.value == null) {
-        message += "The message field is empty";
+        message += "<li>The message field is empty</li>";
         userMessage.classList.add("invalid");
         errors = true;
     }
     if (errors) {
+        message = "<ul>" + message + "</ul>";
         document.getElementById('error-msg').innerHTML=message;
         event.preventDefault();
     }
