@@ -1,59 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/3f8b63cd88.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Brendan Boyle | SCS</title>
-    <meta name="description" content="Overview of the Treehouse training website, Netmatters and the Scion Coallition Training Scheme.">
-</head>
-<body>
-    <div id="overlay" onclick="closeNav()"></div>
-    <nav class="mobile-nav">
-        <div class="initials">
-            <a href="/">BB</a>
-        </div>
-        <ul>
-            <li><a href="/pages/about.html"><span class="link">About Me</span></a></li>
-            <li><a href="/index.html#projects"><span class="link">My Portfolio</span></a></li>
-            <li><a href="/pages/coding.html"><span class="link">Coding Examples</span></a></li>
-            <li><a href="/pages/scs.html"><span class="link">SCS Scheme</span></a></li>
-            <li><a href="/index.html#contact"><span class="link">Contact Me</span></a></li>
-        </ul>
-        <div class="socials">
-            <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://uk.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
-            <a href="https://github.com/BrendanBoy" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </nav>
-    <nav class="main-nav">
-        <div class="initials">
-            <a href="/">BB</a>
-        </div>
-        <ul>
-            <li><a href="/pages/about.html"><span class="link">About Me</span></a></li>
-            <li><a href="/index.html#projects"><span class="link">My Portfolio</span></a></li>
-            <li><a href="/pages/coding.html"><span class="link">Coding Examples</span></a></li>
-            <li><a href="/pages/scs.html"><span class="link">SCS Scheme</span></a></li>
-            <li><a href="/index.html#contact"><span class="link">Contact Me</span></a></li>
-        </ul>
-        <div class="socials">
-            <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://uk.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
-            <a href="https://github.com/BrendanBoy" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </nav>
+<?php
+$pageTitle = "Brendan Boyle | SCS";
+include("inc/head.php");
+include("inc/navigation.php");
+?>
+
     <header>
         <div class="header-bar">
             <button class="mobile-btn" onclick="openNav()">
