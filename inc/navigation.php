@@ -3,10 +3,10 @@
             <a href="index.php">BB</a>
         </div>
         <ul>
-            <li><a href="pages/about.html"><span class="link">About Me</span></a></li>
+            <li><a href="about.php"><span class="link">About Me</span></a></li>
             <li><a href="index.php#projects"><span class="link">My Portfolio</span></a></li>
-            <li><a href="pages/coding.html"><span class="link">Coding Examples</span></a></li>
-            <li><a href="pages/scs.html"><span class="link">SCS Scheme</span></a></li>
+            <li><a href="coding.php"><span class="link">Coding Examples</span></a></li>
+            <li><a href="scs.php"><span class="link">SCS Scheme</span></a></li>
             <li><a href="index.php#contact"><span class="link">Contact Me</span></a></li>
         </ul>
         <div class="socials">
@@ -22,10 +22,10 @@
             <a href="index.php">BB</a>
         </div>
         <ul>
-            <li><a href="pages/about.html"><span class="link">About Me</span></a></li>
+            <li><a href="about.php"><span class="link">About Me</span></a></li>
             <li><a href="index.php#projects"><span class="link">My Portfolio</span></a></li>
-            <li><a href="pages/coding.html"><span class="link">Coding Examples</span></a></li>
-            <li><a href="pages/scs.html"><span class="link">SCS Scheme</span></a></li>
+            <li><a href="coding.php"><span class="link">Coding Examples</span></a></li>
+            <li><a href="scs.php"><span class="link">SCS Scheme</span></a></li>
             <li><a href="index.php#contact"><span class="link">Contact Me</span></a></li>
         </ul>
         <div class="socials">
