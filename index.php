@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Brendan Boyle | Portfolio";
+include("inc/connect.php");
 include("inc/head.php");
 ?>
 
@@ -22,7 +23,7 @@ include("inc/head.php");
             </a>
         </div>
     </header>
-    
+
     <main>
         <section id="projects">
             <div class="project">
