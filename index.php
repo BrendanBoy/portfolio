@@ -73,7 +73,7 @@ include("inc/head.php");
                 </div>
                 <p>I'd love to hear from you</p>
             </div>
-            <form id="contact-form" action="index.php#contact" method="GET" novalidate>
+            <form id="contact-form" action="index.php#contact" method="post" novalidate>
                 <div id="error-msg"></div>
                 <div class="name">
                     <input class="form-field" type="text" name="first_name" id="first_name" placeholder="First Name*">
