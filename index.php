@@ -1,4 +1,51 @@
 <?php
+require("inc/functions.php");
+
+$first_name = $last_name = $mail = $phone = $subject = $message = "";
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $first_name = trim(filter_input(INPUT_POST, "first_name", FILTER_SANITIZE_STRING));
+    $last_name = trim(filter_input(INPUT_POST, "last_name", FILTER_SANITIZE_STRING));
+    $mail = trim(filter_input(INPUT_POST, "mail", FILTER_SANITIZE_STRING));
+    $phone = trim(filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING));
+    $subject = trim(filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING));
+    $message = trim(filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING));
+
+    $error_message = [];
+    if (empty($first_name)) {
+        $error_message[] = "The First Name field is required.";
+    }
+    if (empty($last_name)) {
+        $error_message[] = "The Last Name field is required.";
+    }
+    if (empty($mail)) {
+        $error_message[] = "The Email Address field is required.";
+    } elseif (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        $error_message[] = "The Email format is invalid.";
+    }
+    if (empty($phone)) {
+        $error_message[] = "The Telephone Number field is required.";
+    } elseif (!preg_match("/^(?:0|\+?44)(?:\d\s?){9,10}$/", $phone)) {
+        $error_message[] = "The Telephone Number format is invalid.";
+    }
+    if (empty($message)) {
+        $error_message[] = "The Message field is required.";
+    } elseif (strlen($message) < 5) {
+        $error_message[] = "The Message must be at least 5 characters.";
+    }
+    if (empty($error_message)) {
+        if (add_contact($first_name, $last_name, $mail, $phone, $subject, $message)) {
+            header("location: index.php?mail=1#contact-form");
+        } else {
+            $error_message[] = "Could not deliver your message.";
+        }
+    }
+}
+
+if (isset($_GET['mail'])) {
+    $success_message[] = "Your message has been sent.";
+}
+
 $pageTitle = "Brendan Boyle | Portfolio";
 include("inc/connect.php");
 include("inc/head.php");
@@ -75,14 +122,28 @@ include("inc/head.php");
             </div>
             <form id="contact-form" action="index.php#contact" method="post" novalidate>
                 <div id="error-msg"></div>
-                <div class="name">
-                    <input class="form-field" type="text" name="first_name" id="first_name" placeholder="First Name*">
-                    <input class="form-field" type="text" name="last_name" id="last_name" placeholder="Last Name*"><br>
+                <div class="messages">
+                <?php
+                if (!empty($error_message)) {
+                    echo "<ul>";
+                    foreach ($error_message as $item){
+                        echo "<li class='error'>$item</li>";
+                    }
+                    echo "</ul>";
+                }
+                if (!empty($success_message)) {
+                    echo "<ul><li class='success'>$success_message</li></ul>";
+                }
+                ?>
                 </div>
-                <input class="form-field" type="email" name="mail" id="user_email" placeholder="Email Address*"><br>
-                <input class="form-field" type="tel" name="phone" id="user_phone" placeholder="Telephone Number*">
-                <input class="form-field" type="text" name="subject" id="subject" placeholder="Subject"><br>
-                <textarea class="form-field" name="message" id="user_message" rows="10" placeholder="Message"></textarea><br>
+                <div class="name">
+                    <input class="form-field" type="text" name="first_name" id="first_name" placeholder="First Name*" value="<?php echo $first_name ; ?>">
+                    <input class="form-field" type="text" name="last_name" id="last_name" placeholder="Last Name*" value="<?php echo $last_name ; ?>"><br>
+                </div>
+                <input class="form-field" type="email" name="mail" id="user_email" placeholder="Email Address*" value="<?php echo $mail ; ?>"><br>
+                <input class="form-field" type="tel" name="phone" id="user_phone" placeholder="Telephone Number*" value="<?php echo $phone ; ?>">
+                <input class="form-field" type="text" name="subject" id="subject" placeholder="Subject" value="<?php echo $subject ; ?>"><br>
+                <textarea class="form-field" name="message" id="user_message" rows="10" placeholder="Message"><?php echo $message ; ?></textarea><br>
                 <span class="note"><small>Fields marked with an asterisk are mandatory</small></span>
                 <input type="submit" value="Submit">
                 
