@@ -1,19 +1,10 @@
 <?php
+$page = "about";
 $pageTitle = "Brendan Boyle | About";
-include("inc/head.php");
-include("inc/navigation.php");
+$header = "About Me";
+include("inc/sub-page-header.php");
 ?>
 
-    <header>
-        <div class="header-bar">
-            <button class="mobile-btn" onclick="openNav()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="header-text">
-                <h1>About Me</h1>
-            </div>
-        </div>
-    </header>
     <main id="about">
         <section id="profile">
             <h2>Personal Profile</h2>
@@ -26,12 +17,4 @@ include("inc/navigation.php");
             <p>To further this aim I have been participating in the <a href="scs.html#scs">Scion Coalition Scheme</a>, an intensive training program designed to fully prepare candidates to enter this industry.</p>
         </section>
     </main>
-    <footer class="about-foot">
-        <a href="#about" class="scroll-btn">
-            <i class="fas fa-angle-up"></i>
-            <p>Back To Top</p>
-        </a>
-    </footer>
-    <script src="js/mobile-nav.js"></script>
-</body>
-</html>
+    <?php include("inc/sub-page-footer.php"); ?>

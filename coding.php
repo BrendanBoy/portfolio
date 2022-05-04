@@ -1,19 +1,10 @@
 <?php
+$page = "coding";
 $pageTitle = "Brendan Boyle | Coding";
-include("inc/head.php");
-include("inc/navigation.php");
+$header = "Coding Examples";
+include("inc/sub-page-header.php");
 ?>
 
-    <header>
-        <div class="header-bar">
-            <button class="mobile-btn" onclick="openNav()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="header-text">
-                <h1>Coding Examples</h1>
-            </div>
-        </div>
-    </header>
     <main id="coding">
         <section id="example-1" class="example">
             <h2>Netmatters Reflection</h2>
@@ -172,13 +163,4 @@ include("inc/navigation.php");
             </table>
         </section>
     </main>
-    <footer class="code-foot">
-        <a href="#coding" class="scroll-btn">
-            <i class="fas fa-angle-up"></i>
-            <p>Back To Top</p>
-        </a>
-    </footer>
-    <script src="js/prism.js"></script>
-    <script src="js/mobile-nav.js"></script>
-</body>
-</html>
+    <?php include("inc/sub-page-footer.php"); ?>

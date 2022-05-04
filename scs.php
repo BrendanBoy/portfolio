@@ -1,19 +1,10 @@
 <?php
+$page = "scs";
 $pageTitle = "Brendan Boyle | SCS";
-include("inc/head.php");
-include("inc/navigation.php");
+$header = "SCS Scheme";
+include("inc/sub-page-header.php")
 ?>
 
-    <header>
-        <div class="header-bar">
-            <button class="mobile-btn" onclick="openNav()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="header-text">
-                <h1>SCS Scheme</h1>
-            </div>
-        </div>
-    </header>
     <main id="scs">
         <section id="intro">
             <h2>Introduction to Scion Coalition Scheme</h2>
@@ -48,12 +39,4 @@ include("inc/navigation.php");
             </ul>
         </section>
     </main>
-    <footer>
-        <a href="#scs" class="scroll-btn">
-            <i class="fas fa-angle-up"></i>
-            <p>Back To Top</p>
-        </a>
-    </footer>
-    <script src="js/mobile-nav.js"></script>
-</body>
-</html>
+    <?php include("inc/sub-page-footer.php"); ?>
