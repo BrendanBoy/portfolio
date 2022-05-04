@@ -22,14 +22,14 @@
     </button>
     <nav class="mobile-nav">
         <div class="initials">
-            <a href="index.html">BB</a>
+            <a href="index.php">BB</a>
         </div>
         <ul>
             <li><a href="pages/about.html"><span class="link">About Me</span></a></li>
-            <li><a href="index.html#projects"><span class="link">My Portfolio</span></a></li>
+            <li><a href="index.php#projects"><span class="link">My Portfolio</span></a></li>
             <li><a href="pages/coding.html"><span class="link">Coding Examples</span></a></li>
             <li><a href="pages/scs.html"><span class="link">SCS Scheme</span></a></li>
-            <li><a href="index.html#contact"><span class="link">Contact Me</span></a></li>
+            <li><a href="index.php#contact"><span class="link">Contact Me</span></a></li>
         </ul>
         <div class="socials">
             <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -41,14 +41,14 @@
     </nav>
     <nav class="main-nav">
         <div class="initials">
-            <a href="index.html">BB</a>
+            <a href="index.php">BB</a>
         </div>
         <ul>
             <li><a href="pages/about.html"><span class="link">About Me</span></a></li>
-            <li><a href="index.html#projects"><span class="link">My Portfolio</span></a></li>
+            <li><a href="index.php#projects"><span class="link">My Portfolio</span></a></li>
             <li><a href="pages/coding.html"><span class="link">Coding Examples</span></a></li>
             <li><a href="pages/scs.html"><span class="link">SCS Scheme</span></a></li>
-            <li><a href="index.html#contact"><span class="link">Contact Me</span></a></li>
+            <li><a href="index.php#contact"><span class="link">Contact Me</span></a></li>
         </ul>
         <div class="socials">
             <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -64,7 +64,7 @@
                 <h1 id="head-type">My Name is Brendan Boyle</h1>
                 <p id="para-type">I'm a Web Developer</p>
             </div>
-            <a class="scroll-btn" href="index.html#projects">
+            <a class="scroll-btn" href="index.php#projects">
                 <p>Scroll Down</p>
                 <i class="fas fa-angle-down"></i>
             </a>
@@ -119,7 +119,7 @@
                 </div>
                 <p>I'd love to hear from you</p>
             </div>
-            <form id="contact-form" action="index.html#contact" method="GET" novalidate>
+            <form id="contact-form" action="index.php#contact" method="GET" novalidate>
                 <div id="error-msg"></div>
                 <div class="name">
                     <input class="form-field" type="text" name="first_name" id="first_name" placeholder="First Name*">
