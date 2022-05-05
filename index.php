@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if (isset($_GET['mail'])) {
-    $success_message[] = "Your message has been sent.";
+    $success_message = "Your message has been sent.";
 }
 
 $pageTitle = "Brendan Boyle | Portfolio";

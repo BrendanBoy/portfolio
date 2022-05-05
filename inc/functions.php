@@ -3,7 +3,7 @@
 function add_contact($first_name, $last_name, $mail, $phone, $subject = null, $message) {
     include("connect.php");
 
-    $sql = "INSERT INTO Contact_form(first_name, last_name, mail, phone, subject, message) VALUE(?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO Contact_Form(first_name, last_name, mail, phone, subject, message) VALUE(?, ?, ?, ?, ?, ?)";
 
     try {
         $results = $db->prepare($sql);
@@ -13,6 +13,7 @@ function add_contact($first_name, $last_name, $mail, $phone, $subject = null, $m
         $results->bindValue(4, $phone, PDO::PARAM_STR);
         $results->bindValue(5, $subject, PDO::PARAM_STR);
         $results->bindValue(6, $message, PDO::PARAM_STR);
+        $results->execute();
     } catch (Exception $e) {
         echo "Error!: " . $e->gerMessage() . "<br>";
         return false;
