@@ -246,7 +246,7 @@ h2 {
   font-size: 12px;
   margin-bottom: 10px;
 }
-.project:hover .detail {
+.project:hover .detail, .project:active .detail {
   visibility: visible;
 }
 
