@@ -56,14 +56,22 @@ input[type=submit] {
     float: right;
 }
 
-// Handling invalid inputs
-#error-msg li {
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+// Contact form response
+.success {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+.error {
     color: #a94442;
     background-color: #f2dede;
     border: 1px solid #ebccd1;
+}
+#error-msg li,
+.messages li {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .invalid {

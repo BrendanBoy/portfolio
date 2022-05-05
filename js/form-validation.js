@@ -43,27 +43,27 @@ form.addEventListener('submit', (event) => {
         allFields[i].classList.remove("invalid");
     }
     if (firstName.value == '' || firstName.value == null) {
-        message +="<li>Please enter your first name</li>";
+        message +="<li class='error'>Please enter your first name</li>";
         firstName.classList.add("invalid");
         errors = true;
     }
     if (lastName.value == '' || lastName.value == null) {
-        message +="<li>Please enter your last name</li>";
+        message +="<li class='error'>Please enter your last name</li>";
         lastName.classList.add("invalid");
         errors = true;
     }
     if (chkMail(userEmail.value) == false) {
-        message +="<li>Please enter a valid email address</li>";
+        message +="<li class='error'>Please enter a valid email address</li>";
         userEmail.classList.add("invalid");
         errors = true;
     }
     if (chkTel(userPhone.value) == false) {
-        message += "<li>Please enter a valid UK telephone number</li>";
+        message += "<li class='error'>Please enter a valid UK telephone number</li>";
         userPhone.classList.add("invalid");
         errors = true;
     }
     if (userMessage.value =='' || userMessage.value == null) {
-        message += "<li>The message field is empty</li>";
+        message += "<li class='error'>The message field is empty</li>";
         userMessage.classList.add("invalid");
         errors = true;
     }
