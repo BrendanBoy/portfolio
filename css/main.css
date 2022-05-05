@@ -214,12 +214,18 @@ h2 {
   margin: 0 auto;
   max-width: none;
 }
+@media screen and (min-width: 1750px) {
+  #projects {
+    justify-content: space-evenly;
+  }
+}
 
 .project {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 640px;
   height: auto;
   margin: 20px 0;
 }
