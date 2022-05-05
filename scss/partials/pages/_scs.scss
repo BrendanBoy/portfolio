@@ -13,17 +13,18 @@
 
 #treehouse,
 #netmatters {
-    color: $background;
     top: 30px;
     position: relative;
 }
 
 #treehouse {
     background-color: $treehouse;
+    color: $treehouse-text;
 }
 
 #netmatters {
     background-color: $netmatters;
+    color: $background;
     top: 100px;
     ul {
         list-style: inside;

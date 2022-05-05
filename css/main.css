@@ -493,17 +493,18 @@ table tbody {
 
 #treehouse,
 #netmatters {
-  color: white;
   top: 30px;
   position: relative;
 }
 
 #treehouse {
   background-color: #58c162;
+  color: #3e474f;
 }
 
 #netmatters {
   background-color: #333645;
+  color: white;
   top: 100px;
 }
 #netmatters ul {

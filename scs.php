@@ -16,10 +16,11 @@ include("inc/sub-page-header.php")
             <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they've covered in certain areas.</p>
             <a href="https://teamtreehouse.com/brendanboyle4" target="_blank">
                 <div class="profile">
-                    <img src="img/treehouse-avatar.jpg" alt="">
+                    <!-- <img src="img/treehouse-avatar.jpg" alt=""> -->
+                    <img src="img/me2-modified.png" alt="">
                     <div class="p-text">
                         My Profile<br>
-                        Points: 10,157
+                        Points: 16,539
                     </div>
                 </div>
             </a>
