@@ -120,7 +120,7 @@ include("inc/head.php");
                 </div>
                 <p>I'd love to hear from you</p>
             </div>
-            <form id="contact-form" action="index.php#contact" method="post" novalidate>
+            <form id="contact-form" action="index.php#contact-form" method="post" novalidate>
                 <div id="error-msg"></div>
                 <div class="messages">
                 <?php
