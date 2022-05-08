@@ -386,6 +386,7 @@ section {
 #coding,
 #scs {
   padding: 30px 0 30px;
+  border-bottom: 2px solid #111820;
 }
 #about section,
 #coding section,
@@ -407,6 +408,7 @@ section {
 #about section,
 #coding section {
   background-color: white;
+  outline: 2px solid #111820;
 }
 #about section h2,
 #coding section h2 {
@@ -454,7 +456,22 @@ figcaption {
 }
 
 .example {
-  margin-bottom: 40px !important;
+  margin: 30px auto 60px !important;
+  position: relative;
+}
+.example .tech {
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #111820;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 35px;
 }
 
 @media screen and (max-width: 1200px) {
