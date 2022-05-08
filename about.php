@@ -8,7 +8,7 @@ include("inc/sub-page-header.php");
     <main id="about">
         <section id="profile">
             <h2>Personal Profie</h2>
-            <img src="img/me2-modified.png" alt="Brendan Boyle" class="pic">
+            <img src="img/me2-modified.png" alt="Brendan Boyle" class="pic profile-pic">
             <p>My name is Brendan Boyle, I am a web developer based in the Cambridgeshire area.</p>
             <p>I have had a keen interest in technology from an early age: learning to program on Sinclair and Atari machines and building my own computers when that became affordable.</p>
             <p>I took a web design course at a local college and followed this up with three years of study through the Open University, with an emphasis on programming.</p>

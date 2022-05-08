@@ -441,19 +441,28 @@ section {
   margin-left: 54px;
 }
 
+.pic {
+  position: absolute;
+  border: 2px solid #111820;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .pic {
+    right: 40px;
+  }
+}
+
 #profile {
   position: relative;
 }
 
-.pic {
+.profile-pic {
   filter: grayscale(100%);
-  height: 200px;
-  width: 200px;
-  border: 2px solid #111820;
-  border-radius: 50%;
-  position: absolute;
-  right: 40px;
-  top: -100px;
+  top: -25px;
+  height: 60px;
+  width: 60px;
 }
 
 .card-images {
@@ -475,15 +484,11 @@ figcaption {
   position: relative;
 }
 .example .tech {
-  position: absolute;
   top: -30px;
-  right: 40px;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #111820;
-  border-radius: 50%;
   height: 60px;
   width: 60px;
   font-size: 35px;

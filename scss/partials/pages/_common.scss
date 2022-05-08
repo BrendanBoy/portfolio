@@ -60,3 +60,14 @@ section {
         margin-left: 54px;
     }
 }
+
+.pic {
+    position: absolute;
+    border: 2px solid $theme;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    @media screen and (min-width: 576px) {
+        right: 40px;
+    }
+}

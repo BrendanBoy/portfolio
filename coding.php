@@ -8,7 +8,7 @@ include("inc/sub-page-header.php");
     <main id="coding">
         <section id="example-1" class="example">
             <h2>Netmatters Reflection</h2>
-            <i class="tech fab fa-sass"></i>
+            <i class="tech pic fab fa-sass"></i>
             <p>I wrote this piece of code to populate the CSS classes of the Service Card section of the <a href="https://netmatters.brendan-boyle.netmatters-scs.co.uk/#service-cards" target="_blank">Netmatters home page.</a></p>
             <pre>
                 <code class="language-scss">
@@ -91,7 +91,7 @@ include("inc/sub-page-header.php");
         </section>
         <section id="example-2" class="example">
             <h2>Database Challenge</h2>
-            <i class="tech fas fa-database"></i>
+            <i class="tech pic fas fa-database"></i>
             <p>For this challenge I was given a choice of three data sets. Being a bit of a film buff I chose the one on movies, the table structure of this can be seen below. I decided to see if I could find the most popular film of the bussiest year.</p>
             <figure>
                 <img src="img/movie-database.png" alt="Movie Database">

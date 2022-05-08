@@ -17,15 +17,11 @@ figcaption {
     position: relative;
     // margin-top: 30px !important;
     .tech {
-        position: absolute;
         top: -30px;
-        right: 40px;
         background-color: $background;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid $theme;
-        border-radius: 50%;
         height: 60px;
         width: 60px;
         font-size: 35px;
