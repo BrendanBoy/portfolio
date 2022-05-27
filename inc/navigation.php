@@ -12,8 +12,8 @@
         <div class="socials">
             <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://uk.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+            <a href="https://www.linkedin.com/in/brendan-boyle-a19b9423b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/BrendanBoy" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </nav>
@@ -31,8 +31,8 @@
         <div class="socials">
             <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://uk.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
+            <a href="https://www.linkedin.com/in/brendan-boyle-a19b9423b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/BrendanBoy" target="_blank"><i class="fab fa-github"></i></a>
         </div>
     </nav>
